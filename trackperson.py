@@ -91,7 +91,7 @@ def extract_persons(img,bbox,count,num, identities=None):
         #images[0:400,200*i:200*(i+1)] = detection
 
 
-    cv2.imwrite("/content/res/img"+ str(count) + ".jpg",images)
+    cv2.imwrite("/content/res/img_"+ str(count) + ".jpg",images)
     return images
 
 
