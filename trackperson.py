@@ -16,7 +16,7 @@ from deep_sort.deep_sort import DeepSort
 
 palette = (2 ** 11 - 1, 2 ** 15 - 1, 2 ** 20 - 1)
 
-outputdim = (200,400) # Dimension of final person image wh
+outputdim = (300,600) # Dimension of final person image wh
 peoplecount = 8
 
 
@@ -59,8 +59,8 @@ def draw_boxes(img, bbox, identities=None, offset=(0,0)):
     return img
 
 def extract_persons(img,bbox,count,num, identities=None):
-    images = np.zeros([400,200*peoplecount,3],dtype=np.uint8)
-    print("running")
+    images = np.zeros([600,300*peoplecount,3],dtype=np.uint8)
+    #print("running")
     for i,box in enumerate(bbox):
         x1, y1, x2, y2 = [int(i) for i in box]
 
